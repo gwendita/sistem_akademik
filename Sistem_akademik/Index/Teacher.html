@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      background-color: #64CCDB;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #2f2f2f;
+      padding-top: 20px;
+      flex-shrink: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+
+    .main {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    button {
+      background-color: #64CCDB;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">Teacher Panel</div>
+
+  <div class="container">
+    <div class="sidebar">
+      <a href="Teacher.html">Dashboard</a>
+      <a href="#">My Classes</a>
+      <a href="#">Assignments</a>
+      <a href="#">Student Grades</a>
+      <a href="#">Messages</a>
+      <a href="logout.php">Logout</a>
+    </div>
+
+    <div class="main">
+      <div class="card">
+        <h3>Today's Classes</h3>
+        <ul>
+          <li>9:00 AM - Math 101</li>
+          <li>11:00 AM - Physics 201</li>
+          <li>2:00 PM - Chemistry Lab</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Assignments</h3>
+        <button onclick="alert('Creating assignment...')">Create Assignment</button>
+        <button onclick="alert('Viewing submissions...')">View Submissions</button>
+        <button onclick="alert('Grading assignments...')">Grade Assignments</button>
+      </div>
+
+      <div class="card">
+        <h3>Student Performance</h3>
+        <button onclick="alert('Viewing grade reports...')">View Grade Reports</button>
+        <button onclick="alert('Exporting gradebook...')">Export Gradebook</button>
+      </div>
+
+      <div class="card">
+        <h3>Communication</h3>
+        <button onclick="alert('Sending message to class...')">Message Class</button>
+        <button onclick="alert('Checking inbox...')">View Inbox</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

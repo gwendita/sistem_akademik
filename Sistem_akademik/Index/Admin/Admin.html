@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style_admin.css">
+</head>
+<body>
+
+  <div class="navbar">Admin Panel</div>
+
+  <div class="container">
+    <div class="sidebar">
+      <a href="Admin.html">Dashboard</a>
+      <a href="admin_users.html">Manage Users</a>
+      <a href="admin_courses.html">Manage Courses</a>
+      <a href="admin_reports.html">View Reports</a>
+      <a href="../logout.php">Logout</a>
+    </div>
+
+    <div class="main">
+      <div class="card">
+        <h3>System Overview</h3>
+        <ul>
+          <li>👨‍🎓 Total Students: 1,230</li>
+          <li>👩‍🏫 Total Teachers: 85</li>
+          <li>📚 Active Courses: 42</li>
+          <li>🔧 System Status: <span style="color: green;">Operational</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>User & Course Management</h3>
+        <button onclick="alert('Opening student list...')">View Students</button>
+        <button onclick="alert('Opening teacher list...')">View Teachers</button>
+        <button onclick="alert('Opening courses...')">View Courses</button>
+        <button onclick="alert('Adding new course...')">Add Course</button>
+      </div>
+
+      <div class="card">
+        <h3>Reports & Logs</h3>
+        <button onclick="alert('Generating student report...')">Student Reports</button>
+        <button onclick="alert('Generating course stats...')">Course Statistics</button>
+        <button onclick="alert('Showing login logs...')">System Logs</button>
+      </div>
+
+      <div class="card">
+        <h3>Admin Tools</h3>
+        <button onclick="alert('Sending announcement...')">Send Announcement</button>
+        <button onclick="alert('Opening settings...')">System Settings</button>
+        <button onclick="alert('Backing up data...')">Backup Data</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

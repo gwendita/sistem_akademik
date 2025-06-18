@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Dashboard</title>
+<link rel="stylesheet" href="style_teacher.css">
+</head>
+<body>
+
+  <div class="navbar">Teacher Panel</div>
+
+  <div class="container">
+    <div class="sidebar">
+      <a href="Teacher.html">Dashboard</a>
+      <a href="my_classes.html">My Classes</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="student_grades.html">Student Grades</a>
+      <a href="messages.html">Messages</a>
+      <a href="../logout.php">Logout</a>
+    </div>
+
+    <div class="main">
+      <div class="card">
+        <h3>Today's Classes</h3>
+        <ul>
+          <li>9:00 AM - Math 101</li>
+          <li>11:00 AM - Physics 201</li>
+          <li>2:00 PM - Chemistry Lab</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Assignments</h3>
+        <button onclick="alert('Creating assignment...')">Create Assignment</button>
+        <button onclick="alert('Viewing submissions...')">View Submissions</button>
+        <button onclick="alert('Grading assignments...')">Grade Assignments</button>
+      </div>
+
+      <div class="card">
+        <h3>Student Performance</h3>
+        <button onclick="alert('Viewing grade reports...')">View Grade Reports</button>
+        <button onclick="alert('Exporting gradebook...')">Export Gradebook</button>
+      </div>
+
+      <div class="card">
+        <h3>Communication</h3>
+        <button onclick="alert('Sending message to class...')">Message Class</button>
+        <button onclick="alert('Checking inbox...')">View Inbox</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

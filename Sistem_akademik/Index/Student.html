@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      background-color: #64CCDB;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .sidebar {
+      height: 100vh;
+      width: 200px;
+      position: fixed;
+      background-color: #333;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+
+    .main {
+      margin-left: 200px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">Welcome, Student!</div>
+
+  <div class="sidebar">
+    <a href="#">Home</a>
+    <a href="#">Profile</a>
+    <a href="#">Grades</a>
+    <a href="#">Schedule</a>
+    <a href="#">Assignments</a>
+    <a href="logout.php">Logout</a>
+  </div>
+
+  <div class="main">
+    <div class="card">
+      <h3>Latest Announcements</h3>
+      <p>📌 Midterm exams will start in the 10th of June. Check your schedule for details.</p>
+      <p>📌 Don't forget to do your study case project.</p>
+    </div>
+
+    <div class="card">
+      <h3>Your Upcoming Schedule</h3>
+      <ul>
+        <li>📘 PKN - Wednesday 9:00 AM</li>
+        <li>🧪 Sejarah - Thursday 11:00 AM</li>
+        <li>📖 MTK - Monday 8:00 PM</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Quick Access</h3>
+      <button onclick="alert('Opening grades...')">View Grades</button>
+      <button onclick="alert('Opening assignments...')">View Assignments</button>
+    </div>
+  </div>
+
+</body>
+</html>

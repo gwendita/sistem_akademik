@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Messages</title>
+  <link rel="stylesheet" href="style_teacher.css">
+</head>
+<body>
+
+  <div class="navbar">Teacher Panel</div>
+
+  <div class="container">
+    <div class="sidebar">
+      <a href="Teacher.html">Dashboard</a>
+      <a href="my_classes.html">My Classes</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="student_grades.html">Student Grades</a>
+      <a href="messages.html" class="active">Messages</a>
+      <a href="logout.php">Logout</a>
+    </div>
+
+    <div class="main">
+      <div class="chat-container">
+        <div class="chat-messages">
+          <div class="message received">Hello, Sir!</div>
+          <div class="message sent">Hi! How can I help you today?</div>
+          <div class="message received">I have a question about the assignment.</div>
+        </div>
+        <div class="chat-input">
+          <input type="text" placeholder="Type your message..." />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function sendMessage() {
+      const input = document.querySelector('.chat-input input');
+      const messageText = input.value.trim();
+      if (messageText !== '') {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'message sent';
+        messageDiv.textContent = messageText;
+        document.querySelector('.chat-messages').appendChild(messageDiv);
+        input.value = '';
+        document.querySelector('.chat-messages').scrollTop = document.querySelector('.chat-messages').scrollHeight;
+      }
+    }
+  </script>
+
+</body>
+</html>
